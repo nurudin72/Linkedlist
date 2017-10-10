@@ -114,7 +114,7 @@ public class Chain implements LinearList {
             if (currentNode.element == null) {
                 s.append("null, ");
             } else {
-                s.append(currentNode.element.toString() + " -> ");
+                s.append(currentNode.element.toString() + " ; ");
             }
             currentNode = currentNode.next;
         }

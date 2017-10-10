@@ -77,7 +77,6 @@ public class Chain implements LinearList {
             }
             removeElement = q.next.element;
             q.next = q.next.next;
-            System.out.println(q.previous);
         }
         size--;
         return removeElement;
@@ -99,7 +98,6 @@ public class Chain implements LinearList {
             }
             lastNode.next = new ChainNode(theElement, lastNode.next, lastNode.previous);
             lastNode.previous = firstNode.next;
-            System.out.println(lastNode.previous);
       }
         size++;
     }
@@ -112,7 +110,7 @@ public class Chain implements LinearList {
             if (currentNode.element == null) {
                 s.append("null, ");
             } else {
-                s.append(currentNode.element.toString() + ",");
+                s.append(currentNode.element.toString() + " ; ");
             }
             currentNode = currentNode.next;
         }
